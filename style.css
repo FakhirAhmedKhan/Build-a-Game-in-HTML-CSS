@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(40, 40, 40, 0.9);
+
+}
+.wrapper {
+  padding: 30px;
+  border-radius: 12px;
+  background: rgba(255, 182, 182, 0.9);
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.wrapper header {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+}
+.wrapper p {
+  color: #333;
+}
+.wrapper .input-filed {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.input-filed input,
+.input-filed button {
+  height: 50px;
+  width: calc(100% / 2 -30px);
+  outline: none;
+  padding: 0 20px;
+  border-radius: 8px;
+}
+
+.input-filed input {
+  text-align: center;
+  font-size: 18px;
+  color: #707070;
+  border: 1px solid #4a98f7;
+  width: 120px;
+}
+.input-filed input:disabled {
+  cursor: not-allowed;
+}
+
+.wrapper .input {
+  text-align: center;
+  font-size: 18px;
+  color: #707070;
+  width: 120px;
+  border: 1px solid #aaa;
+}
+.input-filed button {
+  border: none;
+  background: #4a98f7;
+  color: #fff;
+  cursor: pointer;
+  transform: 0.3s;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  display: none;
+}
+.input-filed button:active {
+  transform: scale(0.94);
+}
